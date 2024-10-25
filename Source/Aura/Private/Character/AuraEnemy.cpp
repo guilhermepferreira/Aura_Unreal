@@ -3,6 +3,10 @@
 
 #include "Character/AuraEnemy.h"
 #include "Aura/Aura.h"
+AAuraEnemy::AAuraEnemy()
+{
+	GetMesh()->SetCollisionResponseToChannel(ECC_Visibility, ECR_Block);
+}
 void AAuraEnemy::HighLightActor()
 {
 	GetMesh()->SetRenderCustomDepth(true);
