@@ -94,7 +94,6 @@ void AAuraPlayerController::CursorTrace()
 			//Case B
 			ThisActor->HighLightActor();
 		}
-		
 	}
 	else 
 	{
