@@ -7,6 +7,7 @@
 #include "AuraPlayerController.generated.h"
 
 struct FInputActionValue;
+class IEnemyInterface;
 /**
  * 
  */
