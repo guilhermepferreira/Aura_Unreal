@@ -7,6 +7,7 @@
 
 UAuraAttributeSet::UAuraAttributeSet()
 {
+	InitHealth(100.f);
 }
 
 void UAuraAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
@@ -20,7 +21,7 @@ void UAuraAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Ou
 	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet, MaxMana, COND_None, REPNOTIFY_Always);
 }
 
-void UAuraAttributeSet::OnRep_Helth(const FGameplayAttributeData& OldHealth)
+void UAuraAttributeSet::OnRep_Health(const FGameplayAttributeData& OldHealth)
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UAuraAttributeSet, Health, OldHealth);
 }
